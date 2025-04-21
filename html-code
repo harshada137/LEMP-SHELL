@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+     textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .gender-label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+      margin-left: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Feedback Form</h2>
+
+    <form method="post" action="submit.php">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name">
+      <br>
+
+      <label for="email">E-mail:</label>
+      <input type="text" name="email" id="email">
+      <br>
+
+      <label for="website">Website:</label>
+      <input type="text" name="website" id="website">
+      <br>
+
+      <label for="comment">Comment:</label>
+      <textarea name="comment" id="comment" rows="5" cols="40"></textarea>
+      <br>
+
+      <div>
+        <label class="gender-label">Gender:</label>
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="other">Other
+      </div>
+      <br>
+
+      <input type="submit" name="submit" value="Submit">
+    </form>
+  </div>
+
+</body>
+</html>
