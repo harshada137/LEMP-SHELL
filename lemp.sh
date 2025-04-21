@@ -6,4 +6,4 @@ sudo service mysql start
 cd /usr/share/nginx/html
 sudo rm index.html
 sudo touch index.html
-echo “404…? Nope – just waiting for code to breath life into this canvas”
+echo “404…? Nope – just waiting for code to breath life into this canvas” | sudo tee index.html
